@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Weather App</title>
+	<style>
+		*{font-size:40px;font-family:Arial,Courier;}
+	</style>
+</head>
+
+<body>
+<center>
+	<h1>WEATHER APP</h1>
+	<form>
+		<input type="text" name="city" placeholder="Enter City Name" required>
+		<br><br>
+		<input type="submit" value="Search" name="btn">
+	</form>
+	{{ msg | linebreaks }}
+	<img src = {{ icon }} >
+</center>
+</body>
+</html>
