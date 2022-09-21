@@ -15,7 +15,7 @@ def home(request):
 			temp = data['main']['temp']
 			desc = data['weather'][0]['description']
 			msg = " City = " + city + "\n Temp = " + str(temp) + "\n Desc = " + desc
-			icon = "http://api.openweathermap.org/img/w/" + data['weather'][0]['icon'] + ".png"
+			icon = "http://api.openweathermap.org/img/w/" + data['weather'][0]['icon']
 			return render(request,"home.html",{"msg":msg})
 		except Exception as e:
 			return render(request,"home.html",{"msg":str(e) + str("Invalid City Name")})
