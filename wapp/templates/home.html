@@ -10,9 +10,9 @@
 <center>
 	<h1>WEATHER APP</h1>
 	<form>
-		<input type="text" name="city" placeholder="Enter City Name">
+		<input type="text" name="city" placeholder="Enter City Name" required>
 		<br><br>
-		<input value="Search" name="btn">
+		<input type= "submit" value="Search" name="btn">
 	</form>
 	{{ msg | linebreaks }}
 	<img src = {{ icon }} >
